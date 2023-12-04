@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="font-family: Arial, Helvetica, sans-serif; background-color: #eee; padding: 3em; max-width:550px;">
+        <div style="text-align: center;">
+            <div style="background-color: white; border-radius: 5px; font-size: 16px;">
+                <div style="height: 56px; background-color: #f41f4e; padding:0.5em; text-align: center; border-top-right-radius: 5px; border-top-left-radius: 5px;">
+                    <img src="https://i.postimg.cc/L8gd5SBt/logo-45h.png" style="padding-top: 7px;"/>
+                </div>
+                <div style="padding: 4%; overflow:auto; color: #777;">
+                    {{@foreach(it.data) => key, val}}
+                        {{key}}, {{val}}<br>
+                    {{/foreach}}
+                </div>
+            </div>
+            <p style="color: #888; font-size: 14px;">
+                &copy; 2023 Talgo Cloud LLC. All rights reserved.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

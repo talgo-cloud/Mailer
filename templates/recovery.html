@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="font-family: Arial, Helvetica, sans-serif; background-color: #eee; padding: 3em; max-width:550px;">
+        <div style="text-align: center;">
+            <div style="background-color: white; border-radius: 5px; font-size: 16px;">
+                <div style="height: 56px; background-color: #f41f4e; padding:0.5em; text-align: center; border-top-right-radius: 5px; border-top-left-radius: 5px;">
+                    <img src="https://i.postimg.cc/L8gd5SBt/logo-45h.png" style="padding-top: 7px;"/>
+                </div>
+                <div style="padding: 4%; overflow:auto; color: #777;">
+                    <h1 style="margin: 0.5em 0em 1em 0em; font-weight: bold; color: #333">Recover your Account</h1>
+                    <p style="padding: 0px 2em;">
+                        We recieved a request to recover your Talgo Cloud account.
+                        Click the link below to enter account recovery.
+                        The link is valid for 15 minutes.
+                    </p>
+                    <a type="button" href="{{it.recovery_url}}" style="background-color: #f41f4e; border: none; border-radius: 5px; padding: 1em; color: white; font-style: bold; font-weight: bold; font-size: 16px; text-decoration: none; display: block; width: 81%; text-align: center; margin: 0em 2em;" target="_blank">
+                            Reset password
+                    </a>
+                    <div style="font-size: 14px;">
+                        <hr style="width: 10%;border:0;margin:0px auth;width:10%;height:2px;background:#ddd;">
+                        <p>
+                            Or, copy and paste this link into your browser:
+                        </p>
+                        <a style="word-wrap: break-word; color: #f41f4e" href="{{it.recovery_url}}">
+                            {{it.recovery_url}}
+                        </a>
+                        <p style="color: #aaa; font-style: italic; margin-top: 2.5em;">If you did not request this email, you can safely delete it.</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <p style="color: #888; font-size: 14px;">
+                &copy; 2023 Talgo Cloud LLC. All rights reserved.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

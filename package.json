@@ -1,0 +1,23 @@
+{
+  "name": "mailer",
+  "version": "1.0.0",
+  "description": "E-Mailer microservice for the Talgo Cloud infrastructure.",
+  "main": "./src/index.js",
+  "repository": "github.com/talgo-cloud/Mailer",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@aws-sdk/client-ses": "^3.465.0",
+    "@aws-sdk/client-sesv2": "^3.465.0",
+    "aws-sdk": "^2.1507.0",
+    "express": "^4.18.2",
+    "max-listeners-exceeded-warning": "^0.0.1",
+    "nodemon": "^3.0.1",
+    "pug": "^3.0.2",
+    "squirrelly": "^9.0.0"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": ". ./.env && node ./src/index.js"
+  }
+}
