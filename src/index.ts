@@ -1,6 +1,6 @@
-import express from 'express'
+import * as express from 'express'
 const app = express()
-import router from './routes.js'
+import router from './routes'
 import { EventEmitter } from 'events'
 EventEmitter.defaultMaxListeners = 15;
 
